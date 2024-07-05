@@ -15,7 +15,7 @@ class App extends Component {
         <Member name="stephane" age={23}/>
         <Member name="kalubiaka" age={24}/>
         <Member name="mulumba" age={23}/>
-        <button onClick={this.handleClick}>Click me</button>
+        <button onClick={this.handleClick}>Click-ici</button>
       </div>
     );
   }
