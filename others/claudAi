@@ -1,0 +1,45 @@
+import React, { useState, useEffect } from 'react';
+
+function ChatApp() {
+  const [messages, setMessages] = useState([]);
+  const [inputMessage, setInputMessage] = useState('');
+
+  const handleInputChange = (e) => {
+    setInputMessage(e.target.value);
+  };
+
+  const handleSendMessage = () => {
+    if (inputMessage.trim() !== '') {
+      setMessages([...messages, { text: inputMessage, sender: 'user' }]);
+      setInputMessage('');
+      
+      // Simulate a response (you'd replace this with actual backend communication)
+      setTimeout(() => {
+        setMessages(prevMessages => [...prevMessages, { text: 'Hello! This is a simulated response.', sender: 'bot' }]);
+      }, 1000);
+    }
+  };
+
+  return (
+    <div className="chat-app">
+      <div className="chat-messages">
+        {messages.map((message, index) => (
+          <div key={index} className={`message ${message.sender}`}>
+            {message.text}
+          </div>
+        ))}
+      </div>
+      <div className="chat-input">
+        <input
+          type="text"
+          value={inputMessage}
+          onChange={handleInputChange}
+          placeholder="Type a message..."
+        />
+        <button onClick={handleSendMessage}>Send</button>
+      </div>
+    </div>
+  );
+}
+
+export default ChatApp;
