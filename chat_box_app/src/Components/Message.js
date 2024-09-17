@@ -1,6 +1,4 @@
-/**
- * Renders a user message component.
- */
+
 import React, { Component } from 'react'
 
 export default class Message extends Component {

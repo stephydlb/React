@@ -1,9 +1,4 @@
-/**
- * Represents the Connexion component, which handles the user's connection to the chat application.
- * The component renders a form with an input field for the user to enter their pseudo (username),
- * and a submit button to initiate the connection. Upon submission, the component updates the
- * application state to indicate that the user is ready to be redirected to the chat page.
- */
+
 import React, { Component } from 'react'
 import { Redirect } from 'react-router-dom'
  
