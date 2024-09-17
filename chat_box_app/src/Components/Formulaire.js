@@ -1,3 +1,7 @@
+/**
+ * Formulaire component for a chat application.
+ * Provides a form for users to enter and submit messages.
+ */
 import React, { Component } from 'react'
 
 export default class Formulaire extends Component {
