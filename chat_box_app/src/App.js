@@ -4,8 +4,6 @@ import './App.css'
 import Formulaire from './Components/Formulaire'
 import Message from './Components/Message'
 
-
-
 export default class App extends Component {
   state = {
     messages: []

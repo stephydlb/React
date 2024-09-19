@@ -1,7 +1,3 @@
-/* ----------------------------
-	Typo
----------------------------- */
-
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
 body, .box > *, textarea, input {
@@ -10,9 +6,7 @@ body, .box > *, textarea, input {
 	overflow: hidden;
 }
 
-/* ----------------------------
-	STRUCTURE
----------------------------- */
+
 html {
   box-sizing: border-box;
 }
